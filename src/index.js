@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './components/app'
 
 const LuckyNumber = () => Math.floor(Math.random()*(1000-1+1)+1) ;
 
@@ -19,6 +20,6 @@ const Greeting = (props) => {
 };
 
 ReactDOM.render(
-    <Greeting userObj />,
+    <App />,
     document.getElementById('root')
 );
